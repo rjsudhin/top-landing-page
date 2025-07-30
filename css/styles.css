@@ -26,3 +26,25 @@ html {
   line-height: 1.5;
 }
 
+/* HEADER HEADER */
+header {
+  background-color: var(--dark-color);
+}
+
+header .container .logo {
+  color: var(--hero-text-color);
+  font-weight: bold;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+} 
+
+header .container #menu li {
+  list-style: none;
+  display: block;
+}
+
+header .container #menu li a {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  font-size: clamp(.8rem, 2vw, 1rem);
+}
+/* HEADER HEADER */
