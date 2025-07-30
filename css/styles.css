@@ -40,6 +40,7 @@ header .container .logo {
 header .container #menu li {
   list-style: none;
   display: block;
+  opacity: 0.8;
 }
 
 header .container #menu li a {
@@ -48,3 +49,48 @@ header .container #menu li a {
   font-size: clamp(.8rem, 2vw, 1rem);
 }
 /* HEADER HEADER */
+
+
+/* Desktop Responsive */
+@media (min-width: 750px) {
+
+  /* all containers */
+  .container {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+  }
+  
+  /* -- header --- */
+  header {
+    padding: 1.5rem 0;
+  }
+  header .container  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .container .nav-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .container .nav-bar #menu {
+    display: flex;
+    gap: 1.5rem;
+  }
+  /* -- header --- */
+}
+/* Desktop Responsive */
+
+
+/* Small screen Responsive */
+@media (max-width: 750px) {
+  /* for all container */
+  .container {
+    padding: 0 1rem;
+  }
+  /* Small screen Responsive */
+
+}
