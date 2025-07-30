@@ -10,6 +10,16 @@
   padding: 0;
 }
 
+:root {
+  --dark-color: #1f2937;
+  --hero-text-color: #f9faf8;
+  --secondary-text-color: #e5e7eb;
+  --action-controller: #3882f6;
+  --information-header: #1f2937;
+  --quote-background-color: #e5e7eb;
+  --quote-text-color: #1f2937;
+}
+
 html {
   font-family: Roboto, sans-serif;
   font-size: 18px;
