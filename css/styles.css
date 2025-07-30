@@ -26,6 +26,11 @@ html {
   line-height: 1.5;
 }
 
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
 /* HEADER HEADER */
 header {
   background-color: var(--dark-color);
@@ -49,6 +54,41 @@ header .container #menu li a {
   font-size: clamp(.8rem, 2vw, 1rem);
 }
 /* HEADER HEADER */
+
+/* MAIN MAIN */
+main {
+  background-color: var(--dark-color);
+}
+
+main .container .contents .page-heading {
+  color: var(--hero-text-color);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: bold;
+}
+
+main .container .contents .page-description {
+  color: var(--secondary-text-color);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-weight: bold;
+}
+
+main .container .contents .sign-up-btn {
+  background-color: var(--action-controller);
+  border: none;
+  display: block;
+  border-radius: .5rem;
+  width: 100%;
+  max-width: 110px;
+  height: 30px;
+  color: var(--secondary-text-color);
+  font-weight: bold;
+}
+
+main .container .contents.image-container {
+  width: fit-content;
+}
+
+/* MAIN MAIN */
 
 
 /* Desktop Responsive */
@@ -81,6 +121,30 @@ header .container #menu li a {
     gap: 1.5rem;
   }
   /* -- header --- */
+
+  /* -- main -- */
+  main {
+    padding: 5rem;
+  }
+
+  main .container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main .container .contents {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  main .container .image-container #grid-image {
+    width: 260px;
+    height: auto;
+  }
+  /* -- main -- */
 }
 /* Desktop Responsive */
 
@@ -91,6 +155,44 @@ header .container #menu li a {
   .container {
     padding: 0 1rem;
   }
+ 
+  /* MAIN MAIN */
+  main {
+    padding: 2rem 0;
+  }
+  main .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  main .container .contents {
+    display: flex;
+    flex-direction: column-revers;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  main .container .contents .sign-up-btn {
+    max-width: 210px;
+    margin: 0 auto;
+  }
+
+  main .container .image-container {
+    display: block;
+    margin: 1rem auto;
+  }
+
+  #grid-image {
+    display: block;
+    margin: auto;
+    align-self: center;
+    border: 2px solid green;
+  }
+  /* MAIN MAIN */
+ 
   /* Small screen Responsive */
+
 
 }
