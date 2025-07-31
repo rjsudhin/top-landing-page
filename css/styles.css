@@ -151,13 +151,13 @@ main .container .image-container {
 @media (max-width: 750px) {
   /* for all containers */
   .container {
-    padding: 0 0.6rem;
+    padding: 0 0.8rem;
   }
   /* for all containers */
 
   /* HEADER */
   header {
-    padding: 1rem 0
+    padding: 1.2rem 0
   }
 
   header .container {
@@ -165,6 +165,21 @@ main .container .image-container {
     justify-content: space-between;
     align-items: center;
   }
+
+  header .container .nav-bar #menu {
+    display: none;
+  }
+
+  /* hamburger configure */
+  #hamburger span {
+    display: block;
+    width: 20px;
+    height: 5px;
+    border-bottom: 2px solid var(--hero-text-color);
+  }
+
+
+  /* hamburger configure */
   /* HEADER */
 
   /* MAIN */
