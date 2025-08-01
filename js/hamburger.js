@@ -5,5 +5,6 @@ const hamburger = document.querySelector('#hamburger')
 
 
 hamburger.addEventListener('click', () => {
-  menulist.classList.toggle('active')
+  menulist.classList.toggle('active')   // to showing navs
+  hamburger.classList.toggle('active') // to make hamburger to 'x'
 })
