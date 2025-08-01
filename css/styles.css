@@ -166,6 +166,10 @@ main .container .image-container {
     align-items: center;
   }
 
+  header .container .nav-bar {
+    position: relative;
+  }
+
   header .container .nav-bar #menu {
     display: none;
   }
@@ -176,6 +180,20 @@ main .container .image-container {
     width: 20px;
     height: 5px;
     border-bottom: 2px solid var(--hero-text-color);
+  }
+
+  header .container .nav-bar #menu.active {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 350px;
+    gap: 1rem;
+    top: 50px;
+    right: 0;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--dark-color);
   }
 
 
