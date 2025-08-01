@@ -134,6 +134,39 @@ section.quote-section .container .quote-content .author {
 }
 /* QUOTE section */
 
+/* ACTION section */
+section.action-section {
+  background-color: var(--hero-text-color)
+}
+
+section.action-section .container .action-contents {
+  background-color: var(--action-controller);
+  border-radius: .5rem;
+}
+
+section.action-section .container .action-contents .actions h3, 
+section.action-section .container .action-contents .actions p {
+  color: var(--hero-text-color)
+}
+
+.container .action-contents .actions h3 {
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+}
+
+.container .action-contents .actions p {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.container .action-contents .action-controller .sign-up-btn {
+  background-color: inherit;
+  color: var(--hero-text-color);
+  border-radius: .4rem;
+  border: 2px solid var(--hero-text-color);
+  font-size: clamp(.7rem, 2vw, .9rem);
+  font-weight: bold;
+}
+/* ACTION section */
+
 
 /* Desktop Responsive */
 @media (min-width: 750px) {
@@ -233,6 +266,29 @@ section.quote-section .container .quote-content .author {
     align-self: flex-end;
   }
   /* QUOTE SECTION */
+
+  /* ACTION SECTION */
+  section.action-section {
+    padding: 3.5rem 0;
+  }
+
+  section.action-section .container .action-contents {
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+  }
+
+  section.action-section .container .action-contents .action-controller {
+    width: fit-content;
+    align-self: center;
+  }
+
+  .container .action-contents .action-controller .sign-up-btn {
+    padding: 0.5rem 2rem;
+  }
+  /* ACTION SECTION */  
 }
 /* Desktop Responsive */
 
@@ -385,6 +441,34 @@ section.quote-section .container .quote-content .author {
     align-self: flex-end;
   }
   /* quote section */
+
+  /* action section */
+  section.action-section {
+    padding: 3rem 0;
+  }
+
+  .action-section .container .action-contents {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .action-section .container .action-contents .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .action-section .container .action-controller .sign-up-btn {
+    width: 100%;
+    padding: 0.8rem;
+    display: block;
+    margin: 0 auto;
+  }
+  /* action section */
 
 
 }
